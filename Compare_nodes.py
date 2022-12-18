@@ -216,4 +216,4 @@ if __name__ == "__main__":
             )  for _ in trange(1000)
         )
         rlt = pd.DataFrame(tmp,columns=['norm_total','norm_days','norm_I','hub_total','hub_days','hub_I'])
-        rlt.to_csv(f'Number_of_people_{nodenum}_{avg_degree}_{beta}_{gamma}_0.3_{int(1/s_p)}.csv')
+        rlt.to_csv('Number_of_people_%d_%d_%f_%d_03_%.3f.csv'%(nodenum,avg_degree,beta,gamma,s_p))
