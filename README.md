@@ -11,13 +11,13 @@ Weighted hub and time sampling
 
 For example, we compared WHTS-1/7 with Regular-1/7 across 1000 repeats as follows:
     
-    ```
+    
     outdir = 'D:/yourdir'
     rlt = pd.DataFrame(columns=['norm_total','norm_days','norm_I','hub_total','hub_days','hub_I'])
     for i in range(1000):
         rlt = rlt.append(compare_top_multiply_p_sample_simple_test(nodenum=50000,avg_degree=4,beta=0.1,gamma=7,FN=0.3,s_p = 1/7))
     rlt.to_csv('%s/Rlt_50000_4_0.1_7_0.3_7.csv'%outdir)
-    ```
+    
     
  6) The script file of ```Compare_nodes.py``` is an example of parallel acceleration on the linux environment.
 
