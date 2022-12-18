@@ -10,6 +10,7 @@ Weighted hub and time sampling
 5) The output is a DataFrame data format, including six columns of the number of testing when alerting (Regular-1/7), alerting time (Regular-1/7), the number of infections when alerting (Regular-1/7), the number of testing when alerting (WHTS-1/f), alerting time (WHTS-1/f), the number of infections when alerting (WHTS-1/f).
 
 For example, we compared WHTS-1/7 with Regular-1/7 across 1000 repeats as follows:
+    
     ```
     outdir = 'D:/yourdir'
     rlt = pd.DataFrame(columns=['norm_total','norm_days','norm_I','hub_total','hub_days','hub_I'])
