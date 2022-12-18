@@ -5,7 +5,7 @@ Weighted hub and time sampling
 #### Quick start:
 1) Running DeepID requires the [python](https://www.python.org/downloads/) (3.7 version or later) runtime environment; 
 2) Make sure that extension package including [Numpy](https://numpy.org/), [Pandas](https://pandas.pydata.org/), networkx,sklearn, joblib, and tqdm have installed for current python environment; 
-3) 
+3) ```compare_top_multiply_p_sample_simple_test```  in the script file of '''Compare_nodes.py'''is the main function of this study, which contains the simulation process of Regular-1/7 and WHTS-1/f.
 
 
 
