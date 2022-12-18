@@ -1,5 +1,5 @@
 # WHTS
-Weighted hub and time sampling
+Weighted hub and time sampling: A more cost-saving or sensitive and robust strategy for regular nucleic acid-testing in COVID-19 pandemic
 
 ### Guides
 #### Quick start:
