@@ -6,8 +6,8 @@ Weighted hub and time sampling
 1) Running DeepID requires the [python](https://www.python.org/downloads/) (3.7 version or later) runtime environment; 
 2) Make sure that extension package including [Numpy](https://numpy.org/), [Pandas](https://pandas.pydata.org/), networkx,sklearn, joblib, and tqdm have installed for current python environment; 
 3) ```compare_top_multiply_p_sample_simple_test```  in the script file of ```Compare_nodes.py``` is the main function of this study, which contains the simulation process of Regular-1/7 and WHTS-1/f.
-4) The input parameters of this function are nodenum (Nodes of the network), avg_degree (Mean degree of the network), beta (Transmission rate), gamma (Recovery time/day),FN (False-negative rate),s_p (sampling fraction of WHTS-1/f),infect_num (Number of imported cases).
-
+4) The input parameters of this function are nodenum (Nodes of the network), avg_degree (Mean degree of the network), beta (Transmission rate), gamma (Recovery time/day), FN (False-negative rate), s_p (sampling fraction of WHTS-1/f), infect_num (Number of imported cases), respectively.
+5) The output is a DataFrame data format, including six columns of the number of testing when alerting (Regular-1/7), alerting time (Regular-1/7), the number of infections when alerting (Regular-1/7), the number of testing when alerting (WHTS-1/f), alerting time (WHTS-1/f), the number of infections when alerting (WHTS-1/f).
 
 3) Download the RLM.pdparams, SLM.pdparams, RLM.py and SLM.py, DeepID.py, test_repertoire_level_features.npy, test_sequence_level_features.npy and y_test.npy to the running directory;
 4) The command for evaluating RLM on the test_repertoire_level_features is: 
