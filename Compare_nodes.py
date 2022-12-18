@@ -13,7 +13,7 @@ def updateNodeState(G, node, beta, gamma, day):
         if day > gamma:   # gamma的概率恢复
             G.nodes[node]["state"] = "R" #将节点状态设置成“R”
     elif G.nodes[node]["state"] == "S": #易感者
-        p = random.random() # 生成一个0到1的随机数
+        p = random.random() 
         k = 0  # 计算邻居中的感染者数量
         for neibor in G.adj[node]: # 查看所有邻居状态，遍历邻居用 G.adj[node]
             if G.nodes[neibor]["state"] == "I": #如果这个邻居是感染者，则k加1
@@ -23,7 +23,7 @@ def updateNodeState(G, node, beta, gamma, day):
 
 #网络状态进行更新
 def updateNetworkState(G, beta, gamma,days):
-    for node in G: #遍历图中节点，每一个节点状态进行更新
+    for node in G:
         updateNodeState(G,node, beta, gamma, days[node])
 
 # 计算三类人群的数量；S: 易感者；I: 感染者; R: 恢复者（第三个输出参数）
@@ -48,17 +48,16 @@ def find_I(G):
 
 #设置不同人群的显示颜色，易感者为橘色，感染者为红色，恢复者为绿色
 color_dict = {"S":"orange","I":"red","R":"green"}
-def get_node_color(G): #返回每一个节点的颜色组成的列表
+def get_node_color(G): 
     color_list = []
     for node in G:
-        #使用我们前面创建的状态到颜色的映射字典 color_dict
         color_list.append(color_dict[G.nodes[node]["state"]])
     return color_list
 
 #返回网络节点的度
 def degreeNetwork(G):
     neighbors = []
-    for node in G.nodes(): #遍历图中节点，每一个节点状态进行更新
+    for node in G.nodes():
         neighbors.append(G.degree(node))
     return neighbors
 
